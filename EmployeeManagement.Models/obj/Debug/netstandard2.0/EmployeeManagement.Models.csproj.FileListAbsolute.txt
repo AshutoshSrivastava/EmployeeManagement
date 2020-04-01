@@ -1,0 +1,9 @@
+D:\Work\EmployeeManagement\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.deps.json
+D:\Work\EmployeeManagement\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.dll
+D:\Work\EmployeeManagement\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.pdb
+D:\Work\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.csprojAssemblyReference.cache
+D:\Work\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.csproj.CoreCompileInputs.cache
+D:\Work\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.AssemblyInfoInputs.cache
+D:\Work\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.AssemblyInfo.cs
+D:\Work\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.dll
+D:\Work\EmployeeManagement\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.pdb

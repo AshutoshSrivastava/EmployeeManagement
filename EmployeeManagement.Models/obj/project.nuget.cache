@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "egGRsIOfhMCOBPSkbg+DRzk8cKQJobDOnPKRBUeguXjchfL/kW/ln1qJGQawrX8xvIow/t+cmXp5VHBNJnc6+A==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
