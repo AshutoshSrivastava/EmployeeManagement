@@ -20,6 +20,24 @@ namespace EmployeeManagement.Api.Controllers
             this.employeeRepository = employeeRepository;
         }
 
+        [HttpGet("{search}")]
+        public async Task<ActionResult<IEnumerable<Employee>>> Search(string name,Gender? gender)
+        {
+            try
+            {
+                var result = await employeeRepository.Search(name, gender);
+                if (result.Any())
+                {
+                    return Ok(result);
+                }
+                return NotFound();
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error Retriving Data from Database");
+            }
+        }
+
         [HttpGet]
         public async Task<ActionResult> GetEmployees()
         {
@@ -74,6 +92,50 @@ namespace EmployeeManagement.Api.Controllers
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error occured while saving data to Database");
+            }
+        }
+
+        [HttpPut]
+        [Route("{id:int}")]
+        public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
+        {
+            try
+            {
+                if (employee == null || id != employee.EmployeeId)
+                {
+                    return BadRequest();
+                }
+
+                var employeeToUpdate =await employeeRepository.GetEmployee(id);
+
+                if (employeeToUpdate == null)
+                {
+                    return NotFound($"Employee with id {id} not found in database");
+                }
+                return await employeeRepository.UpdateEmployee(employee);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "An Error occured while Updaing data to Database");
+            }
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public async Task<ActionResult<Employee>> DeleteEmployee(int id)
+        {
+            try
+            {
+                var employeeToDelete = await employeeRepository.GetEmployee(id);
+                if (employeeToDelete == null)
+                {
+                    return NotFound($"Employee with id {id} not found in database");
+                }
+                return await employeeRepository.DeleteEmployee(id);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "An Error occured while Deleing data to Database");
             }
         }
     }

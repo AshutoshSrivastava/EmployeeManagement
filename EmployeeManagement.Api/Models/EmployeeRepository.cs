@@ -16,6 +16,21 @@ namespace EmployeeManagement.Api.Models
             this.appDbContext = appDbContext;
         }
 
+        public async Task<IEnumerable<Employee>> Search(string name, Gender? gender)
+        {
+            IQueryable<Employee> query = appDbContext.Employees;
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(x => x.FirstName.Contains(name) || x.LastName.Contains(name));
+            }
+
+            if (gender != null)
+            {
+                query = query.Where(e => e.Gender == gender);
+            }
+            return await query.ToListAsync();
+        }
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
             return await appDbContext.Employees.ToListAsync();
@@ -63,7 +78,7 @@ namespace EmployeeManagement.Api.Models
             return null;
         }
 
-        public async void DeleteEmployee(int employeeId)
+        public async Task<Employee> DeleteEmployee(int employeeId)
         {
             var result = await appDbContext.Employees
                 .FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
@@ -71,7 +86,9 @@ namespace EmployeeManagement.Api.Models
             {
                 appDbContext.Employees.Remove(result);
                 await appDbContext.SaveChangesAsync();
+                return result;
             }
+            return null;
         }
     }
 }
