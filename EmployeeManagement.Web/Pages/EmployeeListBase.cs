@@ -1,4 +1,5 @@
 ﻿using EmployeeManagement.Models;
+using EmployeeManagement.Web.Services;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,18 @@ namespace EmployeeManagement.Web.Pages
 {
     public class EmployeeListBase : ComponentBase
     {
+        [Inject]
+        public IEmployeeService EmployeeService { get; set; }
         public IEnumerable<Employee> Employees { get; set; }
 
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
-            LoadEmployees();
-            return base.OnInitializedAsync();
+            //LoadEmployees();
+            Employees = (await EmployeeService.GetEmployees()).ToList();
+            //return base.OnInitializedAsync();
         }
+
+        /*
         private void LoadEmployees() {
             Employee e1 = new Employee
             {
@@ -28,7 +34,6 @@ namespace EmployeeManagement.Web.Pages
                 DepartmentId = 1,
                 PhotoPath = "https://picsum.photos/200/151"
             };
-
             Employee e2 = new Employee
             {
                 EmployeeId = 2,
@@ -76,5 +81,6 @@ namespace EmployeeManagement.Web.Pages
 
             Employees = new List<Employee> { e1, e2, e3, e4, e5 };
         }
+        */
     }
 }
