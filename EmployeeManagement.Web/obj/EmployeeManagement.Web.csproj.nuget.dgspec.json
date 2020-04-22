@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {}
+    "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {}
   },
   "projects": {
-    "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+    "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectUniqueName": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "projectName": "EmployeeManagement.Models",
-        "projectPath": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "packagesPath": "C:\\Users\\Ashutosh\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\obj\\",
+        "outputPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Work\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {
+    "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
+        "projectUniqueName": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
         "projectName": "EmployeeManagement.Web",
-        "projectPath": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
+        "projectPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
         "packagesPath": "C:\\Users\\Ashutosh\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Web\\obj\\",
+        "outputPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -96,8 +96,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
-                "projectPath": "D:\\Work\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
+              "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+                "projectPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
               }
             }
           }
