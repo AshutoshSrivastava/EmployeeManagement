@@ -14,5 +14,16 @@ namespace EmployeeManagement.Web.Pages
 
         [Parameter]
         public bool ShowFooter { get; set; }
+
+        [Parameter]
+        public EventCallback<bool> OnEmployeeSelection { get; set; }
+        public bool IsSelected { get; private set; }
+
+        protected async Task CheckBoxChanged(ChangeEventArgs e)
+        {
+            IsSelected = (bool)e.Value;
+            await OnEmployeeSelection.InvokeAsync(IsSelected);
+        }
+
     }
 }

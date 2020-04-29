@@ -1,6 +1,6 @@
 ﻿@page "/"
 @inherits EmployeeListBase
-<h3>Employee List</h3>
+<h3>Selected Employees Count: @SelectedEmployeesCount</h3>
 <div class="form-check">
     <input type="checkbox" class="form-check-input" @bind="ShowFooter" id="showFooter">
     <label class="form-check-label" for="showFooter">Show Footer</label>
@@ -14,7 +14,9 @@
     {
         @foreach (var employee in Employees)
         {
-            <DisplayEmployee Employee="employee" ShowFooter="ShowFooter"></DisplayEmployee>
+            @*<DisplayEmployee Employee="employee" ShowFooter="ShowFooter" OnEmployeeSelection "EmployeeSelectionChanged"></DisplayEmployee>*@
+            <DisplayEmployee OnEmployeeSelection="EmployeeSelectionChanged">
+            </DisplayEmployee>
         }
     }
 </div>
