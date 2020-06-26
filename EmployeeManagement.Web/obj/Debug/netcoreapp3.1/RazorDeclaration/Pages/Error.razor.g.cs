@@ -76,6 +76,13 @@ using EmployeeManagement.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\Work\Blazor\EmployeeManagement\EmployeeManagement.Web\_Imports.razor"
+using EmployeeManagement.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/error")]
     public partial class Error : Microsoft.AspNetCore.Components.ComponentBase
     {

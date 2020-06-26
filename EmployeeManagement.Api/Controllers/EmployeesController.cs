@@ -45,7 +45,7 @@ namespace EmployeeManagement.Api.Controllers
             {
                 return Ok(await employeeRepository.GetEmployees());
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error Retriving Data from Database");
             }
