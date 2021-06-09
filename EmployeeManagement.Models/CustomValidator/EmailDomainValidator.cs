@@ -9,15 +9,21 @@ namespace EmployeeManagement.Models.CustomValidator
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            //return base.IsValid(value, validationContext);
-            string[] strings = value.ToString().Split('@');
-            if (strings.Length > 1 && strings[1].ToUpper()== "GMAIL.COM")
+            if (value != null)
             {
+                //return base.IsValid(value, validationContext);
+                string[] strings = value.ToString().Split('@');
+                if (strings.Length > 1 && strings[1].ToUpper() == "GMAIL.COM")
+                {
+                    return null;
+                }
+                else
+                {
+                    return new ValidationResult("Email domain should be Gmail.com", new[] { validationContext.MemberName });
+                }
+            }
+            else
                 return null;
-            }
-            else {
-                return new ValidationResult("Email domain should be Gmail.com", new[] { validationContext.MemberName });
-            }
         }
     }
 }

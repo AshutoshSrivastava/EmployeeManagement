@@ -10,6 +10,8 @@ namespace EmployeeManagement.Web.Services
     {
         Task<IEnumerable<Employee>> GetEmployees();
         Task<Employee> GetEmployee(int Id);
-
+        Task<Employee> UpdateEmployee(Employee updateEmployee);
+        Task<Employee> CreateEmployee(Employee newEmployee);
+        Task DeleteEmployee(int Id);
     }
 }

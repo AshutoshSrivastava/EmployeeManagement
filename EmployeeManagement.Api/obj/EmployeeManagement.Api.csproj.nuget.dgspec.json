@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {}
+    "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {
+    "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
         "projectName": "EmployeeManagement.Api",
-        "projectPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
-        "packagesPath": "C:\\Users\\Ashutosh\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Api\\obj\\",
+        "projectPath": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
+        "packagesPath": "C:\\Users\\Ashu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ashutosh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ashu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,9 +30,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
-                "projectPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
+              "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+                "projectPath": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
               }
             }
           }
@@ -46,10 +46,21 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[5.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -80,25 +91,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+    "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "projectName": "EmployeeManagement.Models",
-        "projectPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
-        "packagesPath": "C:\\Users\\Ashutosh\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\obj\\",
+        "projectPath": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "packagesPath": "C:\\Users\\Ashu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ashutosh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ashu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -111,6 +121,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -122,6 +133,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -144,7 +156,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,7 +21,7 @@ namespace EmployeeManagement.Api.Controllers
         }
 
         [HttpGet("{search}")]
-        public async Task<ActionResult<IEnumerable<Employee>>> Search(string name,Gender? gender)
+        public async Task<ActionResult<IEnumerable<Employee>>> Search(string name, Gender? gender)
         {
             try
             {
@@ -96,21 +96,21 @@ namespace EmployeeManagement.Api.Controllers
         }
 
         [HttpPut]
-        [Route("{id:int}")]
-        public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
+        //[Route("{id:int}")]
+        public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
         {
             try
             {
-                if (employee == null || id != employee.EmployeeId)
-                {
-                    return BadRequest();
-                }
+                //if (employee == null || id != employee.EmployeeId)
+                //{
+                //    return BadRequest();
+                //}
 
-                var employeeToUpdate =await employeeRepository.GetEmployee(id);
+                var employeeToUpdate = await employeeRepository.GetEmployee(employee.EmployeeId);
 
                 if (employeeToUpdate == null)
                 {
-                    return NotFound($"Employee with id {id} not found in database");
+                    return NotFound($"Employee with id {employee.EmployeeId} not found in database");
                 }
                 return await employeeRepository.UpdateEmployee(employee);
             }

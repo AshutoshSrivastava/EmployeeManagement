@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4oc4WlPdyWMEnm+mPEd9uZ+dBWL1cjVYvD/6GAOI9h/SCxQexk93BdmAEObLqNIzks1TdDeehOtsG75w9tw2ZA==",
+  "dgSpecHash": "ANn65zzE1rO3lJQNaremMwxHSHha3XQG4Sq48FZaeLV9WqeG6hxbqEbQ9nXa21cIFAArkJTDfhQrkrTM+XpBkA==",
   "success": true,
-  "projectFilePath": "D:\\Work\\Blazor\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+  "projectFilePath": "C:\\Users\\Ashu\\source\\repos\\EmployeeManagement\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Ashutosh\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    "C:\\Users\\Ashu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ashu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Ashu\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

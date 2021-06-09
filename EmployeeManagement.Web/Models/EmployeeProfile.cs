@@ -11,11 +11,12 @@ namespace EmployeeManagement.Web.Models
     {
         public EmployeeProfile()
         {
+            //CreateMap<Employee, EditEmployeeModel>(); // without any additional mapping where names match
             CreateMap<Employee, EditEmployeeModel>()
                 .ForMember(dest => dest.ConfirmEmail,
                            opt => opt.MapFrom(src => src.Email));
 
-            //CreateMap<Employee, EditEmployeeModel>();
+            
             CreateMap<EditEmployeeModel, Employee>();
         }
     }
